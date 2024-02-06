@@ -6,9 +6,9 @@ body, h1, h2, p {
 
 /* Define a background color for the entire page */
 body {
+    background-image: url('./pictures/Sprinklebg.svg'); /* Add an image for the hero background */
     background-color: #fffaf2; /* Lighter cream background */
     font-family: 'Helvetica', sans-serif;
-    background-image: url('./pictures/Sprinklebg.svg'); /* Add an image for the hero background */
     background-size: cover;
 }
 
