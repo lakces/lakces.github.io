@@ -1,0 +1,188 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a background color for the entire page */
+body {
+    background-color: #fffaf2; /* Lighter cream background */
+    font-family: 'Helvetica', sans-serif;
+    background-image: url('./pictures/Sprinklebg.svg'); /* Add an image for the hero background */
+    background-size: cover;
+}
+
+/* Style the header and navigation menu */
+header {
+    background-image: url('./pictures/SprinkleHd.svg'); /* Add an image for the header background */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFFAF2; /* Dark green background on hover */
+    color: #556b2f;
+}
+
+/* Style the hero section */
+#hero {
+    text-align: center;
+    padding: 70px 0;
+}
+
+#hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style the "About Me" section */
+#about {
+    background-color: #fdf5e6; /* Lighter cream background */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #556b2f;
+}
+
+/* Style the "Portfolio" section */
+#portfoliodiv {
+    background-color: #fdf5e6; /* Lighter cream background */
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #556b2f;
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+    #portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+    }
+}
+
+.portfolio-item {
+    flex: 1;
+    margin: 20px;
+    background-color: #fdf5e6; /* Lighter cream background */
+    border: 2px solid #556b2f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.portfolio-item img {
+    border-radius: 10px;
+    max-width: 90%;
+    height: auto;
+    border: 2px solid #556b2f;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item-info {
+    padding: 10px;
+}
+
+.portfolio-item h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.portfolio-item p {
+    color: #333; /* Darker gray text color */
+}
+
+/* Style the "Contact Me" section */
+#socials {
+    background-color: #fdf5e6; /* Lighter cream background */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #556b2f;
+}
+
+#socials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#socials p {
+    color: #333; /* Darker gray text color */
+    font-size: 16px;
+}
+
+#socials a {
+    color: #556b2f; /* Deep green link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#socials a:hover {
+    color: #333; /* Darker green link color on hover */
+}
+
+/* Style the footer */
+footer {
+    margin-top: 25px;
+    background-image: url('./pictures/SprinkleHd.svg');
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Media queries for responsiveness - adjust as needed */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+}
