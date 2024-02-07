@@ -6,14 +6,13 @@ body, h1, h2, p {
 
 /* Define a background color for the entire page */
 body {
-    background-image: url('./pictures/SprinkleHd.svg'); /* Add an image for the hero background */
     font-family: 'Helvetica', sans-serif;
     background-size: cover;
 }
 
 /* Style the header and navigation menu */
 header {
-    background-image: url('./pictures/SprinkleHd.svg'); /* Add an image for the header background */
+    background-image: url('./pictures/SprinkleBg.svg'); /* Add an image for the header background */
     background-size: cover;
     color: #fff;
     text-align: center;
